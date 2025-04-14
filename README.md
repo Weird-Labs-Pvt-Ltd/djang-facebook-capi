@@ -60,13 +60,13 @@ Visit `/admin/` and look for **Facebook Event Logs**.
 
 ```python
 from django_facebook_capi.capi_utils import (
-    track_page_view,
-    track_view_content,
-    track_lead_form_submission,
-    track_add_to_cart,
-    track_initiate_checkout,
-    track_purchase,
-    track_custom_event,
+    fb_page_view,
+    fb_view_content,
+    fb_lead_form,
+    fb_add_to_cart,
+    fb_initiate_checkout,
+    fb_purchase,
+    fb_custom_event,
 )
 ```
 
