@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: django-facebook-capi
-Version: 1.1
+Version: 1.1.1
 Summary: Reusable Django app to track Meta/Facebook CAPI events server-side.
 Home-page: https://github.com/Weird-Labs-Pvt-Ltd/djang-facebook-capi
 Author: Preet Sonpal
@@ -94,13 +94,13 @@ Visit `/admin/` and look for **Facebook Event Logs**.
 
 ```python
 from django_facebook_capi.capi_utils import (
-    track_page_view,
-    track_view_content,
-    track_lead_form_submission,
-    track_add_to_cart,
-    track_initiate_checkout,
-    track_purchase,
-    track_custom_event,
+    fb_page_view,
+    fb_view_content,
+    fb_lead_form,
+    fb_add_to_cart,
+    fb_initiate_checkout,
+    fb_purchase,
+    fb_custom_event,
 )
 ```
 
