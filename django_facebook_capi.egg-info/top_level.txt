@@ -1,1 +1,1 @@
-django-facebook-capi
+django_facebook_capi

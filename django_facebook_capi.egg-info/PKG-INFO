@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
-Name: django-facebook-capi
-Version: 1.1.1
+Name: django_facebook_capi
+Version: 1.1.3
 Summary: Reusable Django app to track Meta/Facebook CAPI events server-side.
 Home-page: https://github.com/Weird-Labs-Pvt-Ltd/djang-facebook-capi
 Author: Preet Sonpal
