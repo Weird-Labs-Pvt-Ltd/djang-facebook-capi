@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django_facebook_capi',
-    version='1.1.4',
+    version='1.1.5',
     packages=find_packages(),
     include_package_data=True,
     license='MIT',
