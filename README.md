@@ -1,6 +1,6 @@
 # Django Facebook CAPI Dashboard
 
-**A reusable Django package to track Facebook (Meta) Conversions API events server-side, with built-in logging and admin dashboard.**
+**A reusable Django package to fb Facebook (Meta) Conversions API events server-side, with built-in logging and admin dashboard.**
 
 ---
 
@@ -40,7 +40,7 @@ You can generate these from your [Meta Events Manager](https://business.facebook
 python manage.py migrate django_facebook_capi
 ```
 
-This will create a model to log all tracked events in the admin.
+This will create a model to log all fbed events in the admin.
 
 ### 4. Optional: Enable Django Admin
 
@@ -77,13 +77,13 @@ from django_facebook_capi.capi_utils import (
 #### ✅ PageView
 
 ```python
-track_page_view(request)
+fb_page_view(request)
 ```
 
 #### 👀 ViewContent
 
 ```python
-track_view_content(
+fb_view_content(
     request,
     content_name="Red T-Shirt",
     content_category="Apparel",
@@ -94,13 +94,13 @@ track_view_content(
 #### 📝 Lead Form Submission
 
 ```python
-track_lead_form_submission(request)
+fb_lead_form_submission(request)
 ```
 
 #### 🛒 Add to Cart
 
 ```python
-track_add_to_cart(
+fb_add_to_cart(
     request,
     content_ids=["sku123"],
     value=799,
@@ -111,7 +111,7 @@ track_add_to_cart(
 #### 💳 Initiate Checkout
 
 ```python
-track_initiate_checkout(
+fb_initiate_checkout(
     request,
     content_ids=["sku123", "sku124"],
     value=1598,
@@ -122,7 +122,7 @@ track_initiate_checkout(
 #### 💰 Purchase
 
 ```python
-track_purchase(
+fb_purchase(
     request,
     content_ids=["sku123", "sku124"],
     value=1598,
@@ -134,7 +134,7 @@ track_purchase(
 #### ⚙️ Custom Event
 
 ```python
-track_custom_event(
+fb_custom_event(
     request,
     event_name="StartTrial",
     custom_data={"plan": "Pro", "value": 0}
